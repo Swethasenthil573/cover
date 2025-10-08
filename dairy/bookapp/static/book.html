@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crop Advisory Cover</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+    }
+
+    /* Cover container with background image */
+    .cover {
+      width: 600px;
+      height: 850px;
+      background: url('images.jpg') center/cover no-repeat; /* Replace with your background image URL */
+      margin: 50px auto;
+      color: #fff;
+      padding: 50px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background-blur: 5px; /* Optional: adds a slight blur effect to background */
+    }
+
+    .title-section {
+      z-index: 1; /* Ensures text stays on top of the background */
+    }
+
+    .title-section h1 {
+      font-size: 36px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Adds shadow to text */
+    }
+
+    .title-section h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .highlight {
+      color: #00c853;
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* Footer style */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid #00c853;
+      padding-top: 20px;
+      font-size: 18px;
+    }
+
+    .logo-box {
+      background: #00c853;
+      color: #111;
+      padding: 5px 15px;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+
+    /* Photo inside cover (Farmer, Crop, or Tech Image) */
+    .photo {
+      position: absolute;
+      bottom: 100px;  /* Positioning the photo from the bottom */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <!-- Title and Description -->
+    <div class="title-section">
+      <h1>Smart Crop Advisory<br>System</h1>
+      <h2>Designed for Small and Marginal Farmers</h2>
+      <div class="highlight">AgriTech Edition</div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div>SWETHA.S</div>
+      <div class="logo-box">SmartFarm</div>
+    </div>
+
+    <!-- Image inside the cover -->
+    <img class="photo" src="photo.jpeg" alt="Farmer with Smartphone"> <!-- Replace with actual image link -->
+
+  </div>
+
+</body>
+</html>
